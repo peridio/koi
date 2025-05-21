@@ -1,0 +1,17 @@
+[sdk]
+target = "qemux86_64"
+release = "apollo/edge"
+version = "0.1.0"
+metadata-path = "_avocado/metadata" # default
+repos-path = "_avocado/repos" #default
+
+[package]
+name = "my-extension"
+version = "0.1.0"
+description = "My Extension"
+build-script = "avocado-extension.sh"
+workspace-path = "_avocado/workspace"
+output-path = "_avocado/output" # default
+
+[deps.workspace]
+my-application = { path: "./my-application_qemux86-64_0.1.0.rpm" }
