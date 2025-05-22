@@ -4,6 +4,7 @@ release = "apollo/edge"
 version = "0.1.0"
 metadata-path = "_avocado/metadata" # default
 repos-path = "_avocado/repos" #default
+image = "avocadolinux/sdk:apollo-edge"
 
 [package]
 name = "my-system"
@@ -18,4 +19,4 @@ avocado-pkg-bootfiles = "*"
 avocado-pkg-kernel = "*"
 avocado-img-pkg-initramfsfs = "*"
 avocado-img-pkg-var = "*"
-my-extension = { path: "./my-extension_qemux86-64_0.1.0.rpm" }
+my-extension = { path = "./my-extension_qemux86-64_0.1.0.rpm" }
